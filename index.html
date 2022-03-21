@@ -10,6 +10,7 @@
     <link rel="stylesheet" href="assets/vendors/glightbox/css/glightbox.min.css" />
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="assets/css/fixed.css">
+    <link rel="stylesheet" href="assets/css/fixed-queries.css">
 </head>
 <body data-bs-spy="scroll" data-bs-target="#navbar-example" data-bs-offset="80" tabindex="0">
 <nav id="navbar-example" class="navbar navbar-expand-lg navbar-dark menu shadow fixed-top" role="navigation">
@@ -18,13 +19,13 @@
       <img class="logo-navbar" src="assets/images/cloud-service.png" alt="logo image">
       <div class="flex-column float-end ms-2">
         <h1 class="fs-4 fw-bold mb-0">Fixed<span class="fw-bolder">UP</span></h1>
-        <h2 class="fs-6 fw-light mb-0">Soluciones Integrales I.T.</h2>
+        <h2 class="fs-6 fw-light mb-0 tagline">Soluciones Integrales I.T.</h2>
       </div>
     </a>
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
-    <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+    <div class="collapse navbar-collapse justify-content-end pb-3 pb-md-0 pt-1 pt-md-0" id="navbarNav">
       <ul class="navbar-nav">
         <li class="nav-item"><a class="nav-link smoothscroll active" aria-current="page" href="#home">Inicio</a></li>
         <li class="nav-item"><a class="nav-link smoothscroll" href="#campanies">Partners</a></li>
@@ -82,7 +83,7 @@
 <section id="campanies" class="campanies">
     <div class="container">
       <div class="row text-center">
-        <div><i class="fs-3 text-blue bi bi-patch-check-fill"></i></div>
+        <div class="my-4"><i class="fs-3 text-blue bi bi-patch-check-fill"></i></div>
         <h1 class="display-3 fw-bold">Partnerships</h1>
         <div class="heading-line inverted mb-5"></div>
       </div>
@@ -216,120 +217,61 @@
       <h1 class="display-3 fw-bold">Los Socios</h1>
       <div class="heading-line mb-1"></div> 
     </div>
-    <div class="row pt-2 pb-2 mt-0 mb-3">
-      <div class="col-md-6 border-right">
-        <div class="bg-white p-3">
-          <img src="assets/images/illustrations/emiliano.png" alt="Emiliano" title="Emiliano"
-            class="img-fluid">
-          <h3 class="fw-bold text-center">
+    <div class="row row-socios pt-2 pb-2 mt-0 mb-3">
+      <div class="col-md-6 gx-0">
+        <div class="text-center guy guy-left p-5">
+          <img src="assets/images/illustrations/emiliano.png" alt="Emiliano" title="Emiliano" class="img-fluid fluid-limit">
+        </div>
+        <div class="text-center">
+          <h3 class="fw-bold text-center mt-4">
             Emiliano <span class="screen-reader-text">Apellido</span>
           </h3>
         </div>
       </div>
-      <div class="col-md-6">
-        <div class="bg-white p-3">
-          <img src="assets/images/illustrations/emiliano.png" alt="Emiliano" title="Emiliano" class="img-fluid">
-          <h3 class="fw-bold text-center">
+      <div class="col-md-6 gx-0">
+        <div class="text-center guy guy-right p-5">
+          <img src="assets/images/illustrations/emiliano.png" alt="Emiliano" title="Emiliano" class="img-fluid fluid-limit">
+        </div>
+        <div class="text-center">
+          <h3 class="fw-bold text-center mt-4">
             Emiliano <span class="screen-reader-text">Apellido</span>
           </h3>
         </div>
       </div>
     </div>
   </div>
-
-  <div class="container">
-    <div class="row">
-      <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 services mt-4">
-        <div class="services__content">
-          <div class="icon d-block fas fa-paper-plane"></div>
-          <h3 class="display-3--title mt-1">Marketing</h3>
-          <p class="lh-lg">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi, impedit rem,
-            doloremque autem quibusdam blanditiis harum alias hic accusantium
-            maxime atque ratione magni repellat?
-          </p>
-          <button type="button" class="rounded-pill btn-rounded border-primary">Learn more
-            <span><i class="fas fa-arrow-right"></i></span>
-          </button>
-        </div>
-      </div>
-      <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 services mt-4 text-end">
-        <div class="services__pic">
-          <img src="images/services/service-1.png" alt="marketing illustration" class="img-fluid">
-        </div>
-      </div>
-    </div>
-    <div class="row">
-      <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 services mt-4 text-start">
-        <div class="services__pic">
-          <img src="images/services/service-2.png" alt="web development illustration" class="img-fluid">
-        </div>
-      </div>
-      <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 services mt-4">
-        <div class="services__content">
-          <div class="icon d-block fas fa-code"></div>
-          <h3 class="display-3--title mt-1">web development</h3>
-          <p class="lh-lg">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi, impedit rem,
-            doloremque autem quibusdam blanditiis harum alias hic accusantium
-            maxime atque ratione magni repellat?
-          </p>
-          <button type="button" class="rounded-pill btn-rounded border-primary">Learn more
-            <span><i class="fas fa-arrow-right"></i></span>
-          </button>
-        </div>
-      </div>
-    </div>
-    <div class="row">
-      <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 services mt-4">
-        <div class="services__content">
-          <div class="icon d-block fas fa-cloud-upload-alt"></div>
-          <h3 class="display-3--title mt-1">cloud hosting</h3>
-          <p class="lh-lg">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi, impedit rem,
-            doloremque autem quibusdam blanditiis harum alias hic accusantium
-            maxime atque ratione magni repellat?
-          </p>
-          <button type="button" class="rounded-pill btn-rounded border-primary">Learn more
-            <span><i class="fas fa-arrow-right"></i></span>
-          </button>
-        </div>
-      </div>
-      <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 services mt-4 text-end">
-        <div class="services__pic">
-          <img src="images/services/service-3.png" alt="cloud hosting illustration" class="img-fluid">
-        </div>
-      </div>
-    </div>
-  </div>
-  <div class="container pt-3 mt-5" id="icon-grid">
+  <div class="container py-3 my-5" id="icon-grid">
     <h4 class="pb-2 text-center display-6 fw-bold">¿Qué podemos hacer por tu Red?</h4>
     <div class="heading-line mb-1"></div>
 
     <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-4 g-4 py-5">
       <div class="col d-flex align-items-start">
-        <i class="text-muted flex-shrink-0 me-3 fs-2 bi bi-patch-question-fill"></i>
+        <!-- <i class="text-muted flex-shrink-0 me-3 fs-2 bi bi-patch-question-fill"></i> -->
+        <img src="assets/images/network-icons/firewall.svg" alt="firewall icon" class="network-icons">
         <div>
           <h4 class="fw-bold mb-0">Firewalls</h4>
           <p>Paragraph of text beneath the heading to explain the heading.</p>
         </div>
       </div>
       <div class="col d-flex align-items-start">
-        <i class="text-muted flex-shrink-0 me-3 fs-2 bi bi-patch-question-fill"></i>
+        <!-- <i class="text-muted flex-shrink-0 me-3 fs-2 bi bi-patch-question-fill"></i> -->
+        <img src="assets/images/network-icons/permissions.svg" alt="firewall icon" class="network-icons">
         <div>
           <h4 class="fw-bold mb-0">Permisos</h4>
           <p>Paragraph of text beneath the heading to explain the heading.</p>
         </div>
       </div>
       <div class="col d-flex align-items-start">
-        <i class="text-muted flex-shrink-0 me-3 fs-2 bi bi-patch-question-fill"></i>
+        <!-- <i class="text-muted flex-shrink-0 me-3 fs-2 bi bi-patch-question-fill"></i> -->
+        <img src="assets/images/network-icons/repeater.svg" alt="firewall icon" class="network-icons"> 
         <div>
           <h4 class="fw-bold mb-0">Extensiones</h4>
           <p>Paragraph of text beneath the heading to explain the heading.</p>
         </div>
       </div>
       <div class="col d-flex align-items-start">
-        <i class="text-muted flex-shrink-0 me-3 fs-2 bi bi-patch-question-fill"></i>
+        <!-- <i class="text-muted flex-shrink-0 me-3 fs-2 bi bi-patch-question-fill"></i> -->
+        <img src="assets/images/network-icons/lock.svg" alt="firewall icon" class="network-icons"> 
         <div>
           <h4 class="fw-bold mb-0">Túneles VPN</h4>
           <p>Paragraph of text beneath the heading to explain the heading.</p>
@@ -367,7 +309,14 @@
   </div>
 </section> <!-- //#services-->
 <section id="carousel" class="carousel">
-  <div id="myCarousel" class="carousel slide" data-bs-ride="carousel">
+  <div class="svg-wrapper svg-inverter">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+      <path fill="#ffffff" fill-opacity="1"
+        d="M0,160L48,176C96,192,192,224,288,208C384,192,480,128,576,133.3C672,139,768,213,864,202.7C960,192,1056,96,1152,74.7C1248,53,1344,107,1392,133.3L1440,160L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z">
+      </path>
+    </svg>
+  </div>
+  <div id="myCarousel" class="carousel slide mb-0" data-bs-ride="carousel">
     <div class="carousel-indicators">
       <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="0" class="active" aria-current="true"
         aria-label="Slide 1"></button>
@@ -375,30 +324,32 @@
       <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
     </div>
     <div class="carousel-inner">
-      <div class="carousel-item active slide-01">
-        <div class="container">
-          <div class="carousel-caption text-start">
-            <h1>Example headline.</h1>
-            <p>Some representative placeholder content for the first slide of the carousel.</p>
-            <p><a class="btn btn-lg btn-primary" href="#">Sign up today</a></p>
+      <div class="container-fluid">
+        <div class="carousel-item active slide-01">
+          <div class="container">
+            <div class="carousel-caption text-start">
+              <h1>Example headline.</h1>
+              <p>Some representative placeholder content for the first slide of the carousel.</p>
+              <p><a class="btn btn-lg btn-primary" href="#">Sign up today</a></p>
+            </div>
           </div>
         </div>
-      </div>
-      <div class="carousel-item slide-02">
-        <div class="container">
-          <div class="carousel-caption">
-            <h1>Another example headline.</h1>
-            <p>Some representative placeholder content for the second slide of the carousel.</p>
-            <p><a class="btn btn-lg btn-primary" href="#">Learn more</a></p>
+        <div class="carousel-item slide-02">
+          <div class="container">
+            <div class="carousel-caption">
+              <h1>Another example headline.</h1>
+              <p>Some representative placeholder content for the second slide of the carousel.</p>
+              <p><a class="btn btn-lg btn-primary" href="#">Learn more</a></p>
+            </div>
           </div>
         </div>
-      </div>
-      <div class="carousel-item slide-03">
-        <div class="container">
-          <div class="carousel-caption text-end">
-            <h1>One more for good measure.</h1>
-            <p>Some representative placeholder content for the third slide of this carousel.</p>
-            <p><a class="btn btn-lg btn-primary" href="#">Browse gallery</a></p>
+        <div class="carousel-item slide-03">
+          <div class="container">
+            <div class="carousel-caption text-end">
+              <h1>One more for good measure.</h1>
+              <p>Some representative placeholder content for the third slide of this carousel.</p>
+              <p><a class="btn btn-lg btn-primary" href="#">Browse gallery</a></p>
+            </div>
           </div>
         </div>
       </div>
@@ -411,6 +362,13 @@
       <span class="carousel-control-next-icon" aria-hidden="true"></span>
       <span class="visually-hidden">Next</span>
     </button>
+  </div>
+  <div class="svg-wrapper">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+      <path fill="#ffffff" fill-opacity="1"
+        d="M0,160L48,176C96,192,192,224,288,208C384,192,480,128,576,133.3C672,139,768,213,864,202.7C960,192,1056,96,1152,74.7C1248,53,1344,107,1392,133.3L1440,160L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z">
+      </path>
+    </svg>
   </div>
 </section> <!-- //#carousel-->
 <section id="services" class="services">
@@ -525,74 +483,11 @@
       </div>
     </div>
   </div>
-  <div class="container pt-3 mt-5" id="icon-grid">
-    <h4 class="pb-2 text-center display-6 fw-bold">¿Qué podemos hacer por tu Red?</h4>
-    <div class="heading-line mb-1"></div>
-  
-    <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-4 g-4 py-5">
-      <div class="col d-flex align-items-start">
-        <i class="text-muted flex-shrink-0 me-3 fs-2 bi bi-patch-question-fill"></i>
-        <div>
-          <h4 class="fw-bold mb-0">Firewalls</h4>
-          <p>Paragraph of text beneath the heading to explain the heading.</p>
-        </div>
-      </div>
-      <div class="col d-flex align-items-start">
-        <i class="text-muted flex-shrink-0 me-3 fs-2 bi bi-patch-question-fill"></i>
-        <div>
-          <h4 class="fw-bold mb-0">Permisos</h4>
-          <p>Paragraph of text beneath the heading to explain the heading.</p>
-        </div>
-      </div>
-      <div class="col d-flex align-items-start">
-        <i class="text-muted flex-shrink-0 me-3 fs-2 bi bi-patch-question-fill"></i>
-        <div>
-          <h4 class="fw-bold mb-0">Extensiones</h4>
-          <p>Paragraph of text beneath the heading to explain the heading.</p>
-        </div>
-      </div>
-      <div class="col d-flex align-items-start">
-        <i class="text-muted flex-shrink-0 me-3 fs-2 bi bi-patch-question-fill"></i>
-        <div>
-          <h4 class="fw-bold mb-0">Túneles VPN</h4>
-          <p>Paragraph of text beneath the heading to explain the heading.</p>
-        </div>
-      </div>
-      <div class="col d-flex align-items-start">
-        <i class="text-muted flex-shrink-0 me-3 fs-2 bi bi-patch-question-fill"></i>
-        <div>
-          <h4 class="fw-bold mb-0">Featured title</h4>
-          <p>Paragraph of text beneath the heading to explain the heading.</p>
-        </div>
-      </div>
-      <div class="col d-flex align-items-start">
-        <i class="text-muted flex-shrink-0 me-3 fs-2 bi bi-patch-question-fill"></i>
-        <div>
-          <h4 class="fw-bold mb-0">Featured title</h4>
-          <p>Paragraph of text beneath the heading to explain the heading.</p>
-        </div>
-      </div>
-      <div class="col d-flex align-items-start">
-        <i class="text-muted flex-shrink-0 me-3 fs-2 bi bi-patch-question-fill"></i>
-        <div>
-          <h4 class="fw-bold mb-0">Featured title</h4>
-          <p>Paragraph of text beneath the heading to explain the heading.</p>
-        </div>
-      </div>
-      <div class="col d-flex align-items-start">
-        <i class="text-muted flex-shrink-0 me-3 fs-2 bi bi-patch-question-fill"></i>
-        <div>
-          <h4 class="fw-bold mb-0">Featured title</h4>
-          <p>Paragraph of text beneath the heading to explain the heading.</p>
-        </div>
-      </div>
-    </div>
-  </div>
 </section> <!-- //#services-->
 <section id="portfolio" class="portfolio">
   <div class="container-fluid">
     <div class="row text-center">
-      <div class="my-4"><i class="fs-3 text-blue bi-cpu-fill"></i></div>
+      <div class="my-4"><i class="fs-3 text-blue bi bi-cpu-fill"></i></div>
       <h1 class="display-3 fw-bold text-capitalize">Equipos</h1>
       <div class="heading-line"></div>
       <p class="lead mb-2">
@@ -776,71 +671,48 @@
     </div>
   </div>
 </section> <!-- //#portfolio-->
-<section id="clientes" class="carousel">
+<section id="clientes" class="">
   <div class="container">
     <div class="row text-center">
       <div class="my-4"><i class="fs-3 text-blue far fa-handshake"></i></div>
       <h1 class="display-3 fw-bold text-uppercase">Clientes</h1>
       <div class="heading-line"></div>
-      <p class="lead">Empresas que confían en FixedUP asd</p>
+      <p class="lead">Empresas que confían en FixedUP</p>
     </div>
-    <div id="carousel-clientes" class="carousel slide" data-bs-interval="false" data-bs-ride="carousel">
-      <div class="carousel-indicators">
-        <button type="button" data-bs-target="#carousel-clientes" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-        <button type="button" data-bs-target="#carousel-clientes" data-bs-slide-to="1" aria-label="Slide 2"></button>
-      </div>
-      <div class="carousel-inner">
-        <div class="carousel-item active">
-          <div class="container">
-            <div class="row">
-              <div class="col">
-                <div class="portfolio-box shadow">
-                  <img src="assets/images/clientes/direct-tv-cliente-Fixed-UP.jpg" alt="Direct Tv Cliente Fixed-UP" title="" class="img-fluid">
-                </div>
-              </div>
-              <div class="col">
-                <div class="portfolio-box shadow">
-                  <img src="assets/images/clientes/prosegur-cliente-Fixed-UP.jpg" alt="Prosegur Cliente Fixed-UP" title="" class="img-fluid">
-                </div>
-              </div>
-              <div class="col">
-                <div class="portfolio-box shadow">
-                  <img src="assets/images/clientes/clima-rental-cliente-Fixed-UP.jpg" alt="Clima Rental Cliente Fixed-UP" title="" class="img-fluid">
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="carousel-item">
-          <div class="container">
-            <div class="row">
-              <div class="col">
-                <div class="portfolio-box shadow">
-                  <img src="assets/images/clientes/sic-comercializacion-y-servicios-cliente-Fixed-UP.jpg" alt="Sic Comercializacion Y Servicios Cliente Fixed-UP" title="" class="img-fluid">
-                </div>
-              </div>
-              <div class="col">
-                <div class="portfolio-box shadow">
-                  <img src="assets/images/clientes/conometal-cliente-Fixed-UP.jpg" alt="Conometal Cliente Fixed-UP" title="" class="img-fluid">
-                </div>
-              </div>
-              <div class="col">
-                <div class="portfolio-box shadow">
-                  <img src="assets/images/clientes/alto-metodo-cliente-Fixed-UP.jpg" alt="Alto Método Cliente Fixed-UP" title="" class="img-fluid">
-                </div>
-              </div>
-            </div>
-          </div>
+    <div class="row clientes-wrapper">
+      <div class="col-6 col-lg-4">
+        <div class="portfolio-box clientes shadow">
+          <img src="assets/images/clientes/direct-tv-cliente-Fixed-UP.jpg" alt="Direct Tv Cliente Fixed-UP" title="" class="img-fluid">
         </div>
       </div>
-      <button class="carousel-control-prev" type="button" data-bs-target="#carousel-clientes" data-bs-slide="prev">
-        <span class="carousel-control-prev-icon text-blue" aria-hidden="true"></span>
-        <span class="visually-hidden">Previous</span>
-      </button>
-      <button class="carousel-control-next" type="button" data-bs-target="#carousel-clientes" data-bs-slide="next">
-        <span class="carousel-control-next-icon text-blue" aria-hidden="true"></span>
-        <span class="visually-hidden">Next</span>
-      </button>
+      <div class="col-6 col-lg-4">
+        <div class="portfolio-box clientes shadow">
+          <img src="assets/images/clientes/prosegur-cliente-Fixed-UP.jpg" alt="Prosegur Cliente Fixed-UP" title="" class="img-fluid">
+        </div>
+      </div>
+      <div class="col-6 col-lg-4">
+        <div class="portfolio-box clientes shadow">
+          <img src="assets/images/clientes/clima-rental-cliente-Fixed-UP.jpg" alt="Clima Rental Cliente Fixed-UP" title="" class="img-fluid">
+        </div>
+      </div>
+      <div class="col-6 col-lg-4">
+        <div class="portfolio-box clientes shadow">
+          <img src="assets/images/clientes/sic-comercializacion-y-servicios-cliente-Fixed-UP.jpg"
+            alt="Sic Comercializacion Y Servicios Cliente Fixed-UP" title="" class="img-fluid">
+        </div>
+      </div>
+      <div class="col-6 col-lg-4">
+        <div class="portfolio-box clientes shadow">
+          <img src="assets/images/clientes/conometal-cliente-Fixed-UP.jpg" alt="Conometal Cliente Fixed-UP" title=""
+            class="img-fluid">
+        </div>
+      </div>
+      <div class="col-6 col-lg-4">
+        <div class="portfolio-box clientes shadow">
+          <img src="assets/images/clientes/alto-metodo-cliente-Fixed-UP.jpg" alt="Alto Método Cliente Fixed-UP" title=""
+            class="img-fluid">
+        </div>
+      </div>
     </div>
   </div>
 </section> <!-- //#carousel-->
@@ -863,7 +735,7 @@
                 What are the main features?
               </button>
             </h2>
-            <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne"
+            <div id="collapseOne" class="accordion-collapse collapse" aria-labelledby="headingOne"
               data-bs-parent="#accordionExample">
               <div class="accordion-body">
                 <strong>This is the first item's accordion body.</strong> It is hidden by default, until the collapse

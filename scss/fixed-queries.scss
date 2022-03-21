@@ -1,0 +1,93 @@
+@media (max-width: 400px) {
+    .navbar-brand {
+        display: flex;
+        align-items: inherit;
+        margin-right: 0;
+    }
+    .tagline {
+        max-width: 190px;
+        white-space: break-spaces;
+    }
+}
+
+@media (max-width: 575.98px) {
+    .navbar {
+        padding-top: 0;
+        padding-bottom: 0;
+        width: 100vw;
+    }
+}
+@media (max-width: 767.98px) {
+
+}
+@media (max-width: 991.98px) {
+    .menu li {
+        min-height: 45px;
+        line-height: 45px;
+    }
+    #navbarNav {
+        position: relative;
+    }
+    #navbarNav:before{
+        content: "";
+        display: block;
+        background-image: url(../images/illustrations/cloud-computing.png);
+        background-repeat: no-repeat;
+        background-position: center right;
+        background-size: contain;
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        opacity: 0.15;
+        z-index: -1;
+    }
+
+    .cta-info,
+    .form {
+    padding: 0; 
+}
+
+}
+@media (max-width: 1199.98px) {
+
+}
+@media (max-width: 1399.98px) {
+
+}
+
+
+
+
+@media (min-width: 576px) {
+    .navbar {
+        padding-top: 0;
+        padding-bottom: 0;
+    }
+}
+@media (min-width: 768px) {
+    .guy-left {
+        background-image: url('../images/illustrations/round-glasses-left-light.png');
+        background-repeat: no-repeat;
+        background-position: center right;
+        background-size: contain;
+    }
+    .guy-right {
+        background-image: url('../images/illustrations/round-glasses-right-light.png');
+        background-repeat: no-repeat;
+        background-position: center left;
+        background-size: contain;
+    }
+
+}
+@media (min-width: 992px) {
+
+}
+@media (min-width: 1200px) {
+
+}
+@media (min-width: 1400px) {
+    .container-fluid {
+        padding-right: 2.35rem;
+        padding-left: 2.35rem;
+    }
+}

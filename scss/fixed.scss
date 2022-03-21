@@ -15,20 +15,32 @@ $fu_secondary_hover: #dadada;
 
 $fu_grey: #252B2D;
 $fu_grey_light: #31393C;
+$fu_light_grey: #cccccc;
+$fu_light_grey_light: #e9ecef;
 $fu_blue: rgba(0, 94, 245, 1);
 $fu_blue_light: rgba(33, 118, 255, 1);
 $fu_blueish: rgba(0, 94, 245, 0.6);
 $fu_blueish_light: rgba(33, 118, 255, 0.6);
 
-
-.container-fluid {
-    padding-right: 2.35rem;
-    padding-left: 2.35rem;
-}
+$fluid_limit: 13.5rem; 
 
 .logo-navbar {
   max-width: 60px;
 }
+
+.navbar-dark .navbar-nav .nav-link {
+    color: rgba(255, 255, 255, 0.8);
+}
+
+
+.navbar-collapse {
+  border-top: 2px dashed transparent;
+}
+
+.collapse.show {
+  border-top: 2px dashed rgba(204, 204, 204,0.4);
+}
+
 
 .carousel-caption h1 {
     text-shadow: 2px 2px 2px $fu_blue;
@@ -37,21 +49,18 @@ $fu_blueish_light: rgba(33, 118, 255, 0.6);
   text-shadow: 1px 1px 1px $fu_blue;
 }
 
-.portfolio,
-.services
-#clientes {
-    padding: 2rem 0 1rem 0;
-}
-
 .screen-reader-text {
   position: absolute;
   top: -9999px;
   left: -9999px;
 }
 
-.campanies {
-    padding: 5rem 0;
+.portfolio,
+.services,
+.get-started {
+    padding-top: 0;
 }
+
 
 .menu li {
     padding: 0 0.5rem;
@@ -99,10 +108,7 @@ $fu_blueish_light: rgba(33, 118, 255, 0.6);
     color: #fff;
 }
 
-/* Carousel base class */
-.carousel {
-  margin-bottom: 4rem;
-}
+
 /* Since positioning the image, we need to help out the caption */
 .carousel-caption {
   bottom: 3rem;
@@ -152,19 +158,70 @@ $fu_blueish_light: rgba(33, 118, 255, 0.6);
     background-color: $fu_blue;
 }
 
+.svg-wrapper.svg-inverter {
+  background-color: $fu_blue;
+}
+.svg-inverter svg {
+  transform: rotate(180deg);
+  margin-top: -2px;
+}
+.svg-wrapper:not(.svg-inverter) {
+  background: linear-gradient(to bottom, $fu_blue_light, $fu_blue);
+}
+
+#carousel .carousel-inner {
+  background: linear-gradient(to bottom, $fu_blue, $fu_blue_light);
+}
+.network-icons {
+  width: 80px;
+  max-height: 100px;
+}
+
+
+.intro-section:before { 
+content: "";
+    display: block;
+    background: url(../images/illustrations/cyber-crimes.webp) center right no-repeat;
+    background-size: contain;
+    background-position: top left;
+    z-index: 0;
+    opacity: 0.1;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+}
+.footer { 
+  position: relative;
+}
+
+
+.footer:before { 
+content: "";
+    display: block;
+    background: url(../images/illustrations/corner.webp) center right no-repeat;
+    background-size: contain;
+    background-position: bottom right;
+    z-index: 0;
+    opacity: 0.1;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+}
 
 
 .slide-01 { 
-  background: url('../images/illustrations/incident.png') center right no-repeat, linear-gradient(to bottom, $fu_blue, $fu_blue_light);
+  background: url('../images/illustrations/incident.png') center right no-repeat;
   background-size: contain;
 }
 .slide-02 { 
-  background: url('../images/illustrations/remote-support.png') top center no-repeat, linear-gradient(to bottom, $fu_blue, $fu_blue_light);
+  background: url('../images/illustrations/remote-support.png') top center no-repeat;
   background-size: auto;
 }
 
 .slide-03 { 
-  background: url('../images/illustrations/3262095.svg') center left no-repeat, linear-gradient(to bottom, $fu_blue, $fu_blue_light);
+  background: url('../images/illustrations/3262095.svg') center left no-repeat;
   background-size: auto;
 }
 
@@ -208,10 +265,25 @@ $fu_blueish_light: rgba(33, 118, 255, 0.6);
     transition-property: all;
 }
 
+#clientes .portfolio-box {
+  border-top: none;
+  // border-bottom: 0.15rem solid $fu_blue_light;
+}
+
+
 #clientes .portfolio-box:hover img {
     transform: scale(1.15);
     transition-duration: 3s;
     transition-property: all;
+}
+
+
+.guy img {
+  max-height: 400px;
+}
+
+.get-started {
+  background: linear-gradient(to bottom, white, $fu_light_grey);
 }
 
 

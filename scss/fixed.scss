@@ -1,0 +1,363 @@
+// FIXED COLORS
+// https://coolors.co/252b2d-31393c-005ef5-2176ff-5db5fd-86c8fe-fdca40-fdca40-f79824-f79824
+
+// background: rgb(2,120,207);
+// background: linear-gradient(180deg, rgba(2,120,207,1) 0%, rgba(34,131,205,1) 49%, rgba(0,112,192,1) 50%, rgba(0,81,143,1) 100%);
+
+@import '../../node_modules/animate.css/animate.min.css'; 
+@import '../../node_modules/bootstrap-icons/font/bootstrap-icons.css'; 
+// @import '../../node_modules/@fortawesome/fontawesome-free/css/fontawesome.min.css'; 
+
+$fu_main: #ff0000;
+$fu_main_hover: #ffdd00;
+$fu_secondary: #000000;
+$fu_secondary_hover: #dadada;
+
+$fu_grey: #252B2D;
+$fu_grey_light: #31393C;
+$fu_blue: rgba(0, 94, 245, 1);
+$fu_blue_light: rgba(33, 118, 255, 1);
+$fu_blueish: rgba(0, 94, 245, 0.6);
+$fu_blueish_light: rgba(33, 118, 255, 0.6);
+
+
+.container-fluid {
+    padding-right: 2.35rem;
+    padding-left: 2.35rem;
+}
+
+.logo-navbar {
+  max-width: 60px;
+}
+
+.carousel-caption h1 {
+    text-shadow: 2px 2px 2px $fu_blue;
+}
+.carousel-caption p {
+  text-shadow: 1px 1px 1px $fu_blue;
+}
+
+.portfolio,
+.services
+#clientes {
+    padding: 2rem 0 1rem 0;
+}
+
+.screen-reader-text {
+  position: absolute;
+  top: -9999px;
+  left: -9999px;
+}
+
+.campanies {
+    padding: 5rem 0;
+}
+
+.menu li {
+    padding: 0 0.5rem;
+}
+
+.btn-rounded.call {
+    padding: 0.7rem 3.375rem 0.7rem 1rem;
+}
+
+.text-blue {
+  color: $fu_blue;
+}
+.svg-wrapper {
+  align-items: center;
+  height: 100%
+}
+
+.intro-section {
+    background: linear-gradient(to right, $fu_blue,  $fu_blue_light);
+    padding: 10rem 0 0 0;
+    width: 100%;
+    height: 100%;
+}
+
+.campanies__logo-box {
+	height: 5rem;
+}
+
+.campanies__logo-box img:hover {
+    filter: none;
+}
+
+.menu {
+    background: linear-gradient(to bottom, $fu_grey, $fu_grey_light);
+} 
+
+.btn-rounded span {
+    background-color: $fu_blue;
+}
+.btn-rounded:hover span {
+    background-color: $fu_blue_light;
+}
+.btn-rounded:hover {
+    background: $fu_blue;
+    color: #fff;
+}
+
+/* Carousel base class */
+.carousel {
+  margin-bottom: 4rem;
+}
+/* Since positioning the image, we need to help out the caption */
+.carousel-caption {
+  bottom: 3rem;
+  z-index: 10;
+}
+
+/* Declare heights because of positioning of img element */
+.carousel-item {
+  height: 32rem;
+}
+.carousel-item > img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  min-width: 100%;
+  height: 32rem;
+}
+
+.bd-placeholder-img {
+  font-size: 1.125rem;
+  text-anchor: middle;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  user-select: none;
+}
+
+@media (min-width: 768px) {
+  .bd-placeholder-img-lg {
+    font-size: 3.5rem;
+  }
+}
+
+.carousel-indicators [data-bs-target] {
+    width: 60px;
+    height: 4px;
+}
+
+#carousel-clientes .carousel-item {
+    height: auto!important;
+}
+
+#carousel-clientes {
+    padding-bottom: 5rem;
+}
+
+#carousel-clientes .carousel-indicators [data-bs-target]{
+    background-color: $fu_blue;
+}
+
+
+
+.slide-01 { 
+  background: url('../images/illustrations/incident.png') center right no-repeat, linear-gradient(to bottom, $fu_blue, $fu_blue_light);
+  background-size: contain;
+}
+.slide-02 { 
+  background: url('../images/illustrations/remote-support.png') top center no-repeat, linear-gradient(to bottom, $fu_blue, $fu_blue_light);
+  background-size: auto;
+}
+
+.slide-03 { 
+  background: url('../images/illustrations/3262095.svg') center left no-repeat, linear-gradient(to bottom, $fu_blue, $fu_blue_light);
+  background-size: auto;
+}
+
+.portfolio-box {
+    height: auto;
+    border-top: 0.5rem solid #c685f7;
+}
+
+.add-gradient {
+  background: rgb(2,120,207);
+  background: linear-gradient(180deg, rgba(2,120,207,1) 0%, rgba(34,131,205,1) 49%, rgba(0,112,192,1) 50%, rgba(0,81,143,1) 100%);
+}
+
+.portfolio-box.partnerships {
+    height: 8.5rem!important;
+    align-items: center;
+    height: 100%;
+    display: flex;
+    border-top: none!important;
+    padding: 1rem;
+}
+.portfolio-box.partnerships .portfolio-info {
+    background-color: $fu_blue;
+}
+
+.portfolio-box.partnerships .portfolio-info .caption {
+  width: 80%;
+}
+
+.portfolio-box.partnerships .portfolio-info .caption h4 { 
+  text-transform: none;
+}
+
+.portfolio-box.partnerships img {
+  height: auto!important;
+}
+
+.portfolio-box:hover svg {
+    transform: scale(1.5);
+    transition-duration: 1s;
+    transition-property: all;
+}
+
+#clientes .portfolio-box:hover img {
+    transform: scale(1.15);
+    transition-duration: 3s;
+    transition-property: all;
+}
+
+
+.heading-line::after,
+.heading-line::before {
+    background-color: $fu_blue!important;
+}
+
+
+.heading-line.inverted::before {
+    content: "";
+    width: 2rem;
+    padding-top: 0.5rem;
+    height: 0.2rem;
+    display: block;
+    margin: 0 auto;
+    margin-top: 1rem;
+    background-color: $fu_blue;
+}
+
+.heading-line.inverted::after {
+    content: "";
+    width: 10rem;
+    height: 0.1rem;
+    display: block;
+    margin: 0 auto;
+    background-color: $fu_blue;
+    padding-top: 0;
+}
+
+.toggle-spans {
+  height: 4rem;
+  margin-bottom: 15px;
+}
+
+.toggle-spans .col {
+  position: relative;
+}
+
+.toggle-spans span {
+  width: 100%;
+  opacity: 0;
+	-webkit-animation-fill-mode:both;
+  -moz-animation-fill-mode:both;
+  -o-animation-fill-mode:both;
+	animation-fill-mode:both;
+	
+	-webkit-animation:goInGoOut 12s infinite;
+	-moz-animation:goInGoOut 12s infinite;
+	-o-animation:goInGoOut 12s infinite;
+	animation:goInGoOut 12s infinite;
+}
+
+.toggle-spans .text-end span { 
+  position: absolute;
+  right: 25px;
+}
+.toggle-spans .text-end::after{
+    content: "&";
+    display: block;
+    position: absolute;
+    right: -8px;
+    font-size: 70%;
+    font-weight: lighter;
+    line-height: 52px;
+    color: $fu_blue;
+}
+
+.toggle-spans .text-start span { 
+  position: absolute;
+  left: 25px;
+}
+
+.toggle-spans .span-01 { 
+  -webkit-animation-delay: 0s;
+     -moz-animation-delay: 0s;
+       -o-animation-delay: 0s;
+          animation-delay: 0s;
+}
+.toggle-spans .span-02 { 
+  -webkit-animation-delay: 0.5s;
+     -moz-animation-delay: 0.5s;
+       -o-animation-delay: 0.5s;
+          animation-delay: 0.5s;
+}
+.toggle-spans .span-03 { 
+  -webkit-animation-delay: 4s;
+     -moz-animation-delay: 4s;
+       -o-animation-delay: 4s;
+          animation-delay: 4s; 
+}
+.toggle-spans .span-04 { 
+  -webkit-animation-delay: 4.5s;
+     -moz-animation-delay: 4.5s;
+       -o-animation-delay: 4.5s;
+          animation-delay: 4.5s;
+}
+.toggle-spans .span-05 { 
+  -webkit-animation-delay: 8s;
+     -moz-animation-delay: 8s;
+       -o-animation-delay: 8s;
+          animation-delay: 8s;
+}
+.toggle-spans .span-06 { 
+  -webkit-animation-delay: 8.5s;
+     -moz-animation-delay: 8.5s;
+       -o-animation-delay: 8.5s;
+          animation-delay: 8.5s;
+}
+
+@keyframes goInGoOut {
+	0% { opacity:0; }
+	5% { opacity:1; }
+	25% { opacity:1; }
+	30% { opacity:0; }
+	100% { opacity:0; }
+}
+
+@-moz-keyframes goInGoOut {
+	0% { opacity:0; }
+	5% { opacity:1; }
+	25% { opacity:1; }
+	30% { opacity:0; }
+	100% { opacity:0; }
+}
+
+@-webkit-keyframes goInGoOut {
+	0% { opacity:0; }
+	5% { opacity:1; }
+	25% { opacity:1; }
+	30% { opacity:0; }
+	100% { opacity:0; }
+}
+
+@-o-keyframes goInGoOut {
+	0% { opacity:0; }
+	5% { opacity:1; }
+	25% { opacity:1; }
+	30% { opacity:0; }
+	100% { opacity:0; }
+}
+
+@-ms-keyframes goInGoOut {
+	0% { opacity:0; }
+	5% { opacity:1; }
+	25% { opacity:1; }
+	30% { opacity:0; }
+	100% { opacity:0; }
+}

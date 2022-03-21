@@ -1,0 +1,16 @@
+{
+	"folders": [
+		{
+			"path": "."
+		},
+		{
+			"path": "../_recursos/bootstrap-5.1.3-examples"
+		},
+		{
+			"path": "../../../../home/juanbeto/Documents/EMILIANO/fixed-up.com"
+		}
+	],
+	"settings": {
+		"liveServer.settings.multiRootWorkspaceName": "bootstrap-portfolio"
+	}
+}

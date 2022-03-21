@@ -4,7 +4,7 @@
   "description": "Learning bootstrap v5 with sass",
   "main": "index.js",
   "scripts": {
-   "compile:sass": "sass --watch scss:assets/css"
+    "compile:sass": "sass --watch scss:assets/css"
   },
   "keywords": [
     "Bootstrap",
@@ -16,10 +16,20 @@
   "author": "Patrick Muriungi",
   "license": "ISC",
   "devDependencies": {
+    "animate.css": "^4.1.1",
+    "bootstrap-icons": "^1.8.1",
     "sass": "^1.32.12"
   },
   "dependencies": {
     "@fortawesome/fontawesome-free": "^5.15.3",
     "bootstrap": "^5.0.0"
-  }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/MuriungiPatrick/Bootstrap-5-portfolio-template.git"
+  },
+  "bugs": {
+    "url": "https://github.com/MuriungiPatrick/Bootstrap-5-portfolio-template/issues"
+  },
+  "homepage": "https://github.com/MuriungiPatrick/Bootstrap-5-portfolio-template#readme"
 }

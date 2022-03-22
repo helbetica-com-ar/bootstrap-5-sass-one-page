@@ -156,6 +156,10 @@
   max-height: 100px;
 }
 
+.gradient {
+  background: linear-gradient(to bottom, #005ef5, #2176ff);
+}
+
 .intro-section:before {
   content: "";
   display: block;
@@ -170,14 +174,40 @@
   top: 0;
 }
 
+.contact-left,
 .footer {
   position: relative;
 }
 
+.contact-left:before,
 .footer:before {
   content: "";
   display: block;
-  background: url(../images/illustrations/corner.webp) center right no-repeat;
+  background: url("../images/network-icons/nodes.svg") center right no-repeat;
+  background-size: cover;
+  background-position: top left;
+  z-index: 0;
+  opacity: 0.1;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  overflow: hidden;
+}
+
+.contact-left:before {
+  opacity: 0.25;
+}
+
+.footer:before {
+  opacity: 0.1;
+}
+
+.footer > div:before {
+  content: "";
+  display: block;
+  background: url("../images/illustrations/corner.webp") center right no-repeat;
   background-size: contain;
   background-position: bottom right;
   z-index: 0;
@@ -186,6 +216,8 @@
   height: 100%;
   position: absolute;
   top: 0;
+  right: 0;
+  overflow: hidden;
 }
 
 .slide-01 {

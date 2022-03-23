@@ -55,7 +55,7 @@
 
 .intro-section {
   background: linear-gradient(to right, #005ef5, #2176ff);
-  padding: 10rem 0 0 0;
+  padding: 6.5rem 0 0 0;
   width: 100%;
   height: 100%;
 }
@@ -175,12 +175,18 @@
 }
 
 .contact-left,
-.footer {
+footer,
+.footer-bottom .container-fluid {
   position: relative;
 }
 
+.footer-content-wrapper > div,
+.footer-bottom > div {
+  z-index: 2;
+}
+
 .contact-left:before,
-.footer:before {
+.footer-content-wrapper:before {
   content: "";
   display: block;
   background: url("../images/network-icons/nodes.svg") center right no-repeat;
@@ -200,11 +206,11 @@
   opacity: 0.25;
 }
 
-.footer:before {
-  opacity: 0.1;
+.footer-content-wrapper:before {
+  opacity: 0.4;
 }
 
-.footer > div:before {
+.footer-content-wrapper > div:before {
   content: "";
   display: block;
   background: url("../images/illustrations/corner.webp") center right no-repeat;

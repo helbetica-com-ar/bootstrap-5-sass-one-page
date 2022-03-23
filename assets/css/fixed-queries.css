@@ -72,6 +72,10 @@
     padding-right: 2.35rem;
     padding-left: 2.35rem;
   }
+
+  .intro-section {
+    padding: 8rem 0 0 0;
+  }
 }
 
 /*# sourceMappingURL=fixed-queries.css.map */

@@ -1,3 +1,4 @@
+// MAX WIDTH
 @media (max-width: 400px) {
     .navbar-brand {
         display: flex;
@@ -57,7 +58,7 @@
 
 
 
-
+// MIN WIDTH
 @media (min-width: 576px) {
     .navbar {
         padding-top: 0;
@@ -89,5 +90,8 @@
     .container-fluid {
         padding-right: 2.35rem;
         padding-left: 2.35rem;
+    }
+    .intro-section {
+        padding: 8rem 0 0 0;
     }
 }

@@ -1,5 +1,9 @@
 @import '../../node_modules/animate.css/animate.min.css';
 @import '../../node_modules/bootstrap-icons/font/bootstrap-icons.css';
+body {
+  font-family: "Poppins", "Ubuntu", sans-serif;
+}
+
 .logo-navbar {
   max-width: 60px;
 }

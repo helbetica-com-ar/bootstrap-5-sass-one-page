@@ -24,6 +24,27 @@ $(document).ready(function () {
         customScrollTo(where);
     });
 
+    $('#playButton').on("click", function () {
+        if ($('#playButton').hasClass('.enabled')) {
+            console.log('entramos');
+        } else {
+            $('#myCarousel').carousel('cycle');
+            $('#myCarousel').carousel('next');
+            $('#playButton').addClass('enabled');
+            $('#pauseButton').removeClass('enabled');
+        }
+    });
+    
+    $('#pauseButton').on("click", function () {
+        if ($('#pauseButton').hasClass('enabled')){
+            console.log('entramos 2');
+        } else {
+            $('#myCarousel').carousel('pause');
+            $('#pauseButton').addClass('enabled');
+            $('#playButton').removeClass('enabled');
+        }
+    });
+
 }); // end document ready
 
 

@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>FixedUP - Proveedores de Soluciones I.T.</title>
+    <link rel="icon" type="image/jpg" href="assets/images/cloud-service.png" />
     <link rel="stylesheet" href="assets/css/style.css">
     <link rel="stylesheet" href="assets/css/fontawesome.css">
     <link rel="stylesheet" href="assets/vendors/glightbox/css/glightbox.min.css" />
@@ -218,6 +219,7 @@
       <div class="my-4"><i class="fs-3 text-blue fas fa-users"></i></div>
       <h1 class="display-3 fw-bold">Los Socios</h1>
       <div class="heading-line mb-1"></div> 
+      <p class="lead"><span class="fw-bold">Somos tu equipo</span> de trabajo</p>
     </div>
     <div class="row row-socios pt-2 pb-2 mt-0 mb-3">
       <div class="col-md-6 gx-0">
@@ -320,17 +322,17 @@
   </div>
   <div id="myCarousel" class="carousel slide mb-0" data-bs-ride="carousel">
     <div class="carousel-indicators">
-      <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="0" class="active" aria-current="true"
-        aria-label="Slide 1"></button>
+      <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
       <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
       <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+      <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="3" aria-label="Slide 4"></button>
     </div>
     <div class="carousel-inner">
       <div class="container-fluid">
         <div class="carousel-item active slide-01">
           <div class="container">
             <div class="carousel-caption text-start">
-              <h1>Example headline.</h1>
+              <h1 class="display-3 fw-bold">Example headline.</h1>
               <p>Some representative placeholder content for the first slide of the carousel.</p>
               <p><a class="btn btn-lg btn-primary" href="#">Sign up today</a></p>
             </div>
@@ -339,7 +341,7 @@
         <div class="carousel-item slide-02">
           <div class="container">
             <div class="carousel-caption">
-              <h1>Another example headline.</h1>
+              <h1 class="display-3 fw-bold">Another example headline.</h1>
               <p>Some representative placeholder content for the second slide of the carousel.</p>
               <p><a class="btn btn-lg btn-primary" href="#">Learn more</a></p>
             </div>
@@ -348,7 +350,16 @@
         <div class="carousel-item slide-03">
           <div class="container">
             <div class="carousel-caption text-end">
-              <h1>One more for good measure.</h1>
+              <h1 class="display-3 fw-bold">One more for good measure.</h1>
+              <p>Some representative placeholder content for the third slide of this carousel.</p>
+              <p><a class="btn btn-lg btn-primary" href="#">Browse gallery</a></p>
+            </div>
+          </div>
+        </div>
+        <div class="carousel-item slide-04">
+          <div class="container">
+            <div class="carousel-caption text-center">
+              <h1 class="display-3 fw-bold">¿Qué empresas podemos asistir?</h1>
               <p>Some representative placeholder content for the third slide of this carousel.</p>
               <p><a class="btn btn-lg btn-primary" href="#">Browse gallery</a></p>
             </div>
@@ -357,13 +368,25 @@
       </div>
     </div>
     <button class="carousel-control-prev" type="button" data-bs-target="#myCarousel" data-bs-slide="prev">
-      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="carousel-control-prev-icon" aria-hidden="true">
+        <i class="bi bi-chevron-compact-left"></i>
+      </span>
       <span class="visually-hidden">Previous</span>
     </button>
     <button class="carousel-control-next" type="button" data-bs-target="#myCarousel" data-bs-slide="next">
-      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="carousel-control-next-icon" aria-hidden="true">
+        <i class="bi bi-chevron-compact-right"></i>
+      </span>
       <span class="visually-hidden">Next</span>
     </button>
+    <div class="action-btn-wrapper row text-center">
+      <button id="playButton" type="button" class="btn btn-default btn-xs action-btn fw-light enabled" style="line-height: 1;">
+        <i class="text-white bi bi-play-fill"></i><span class="fs-6 text-white">INICIAR</span>
+      </button>
+      <button id="pauseButton" type="button" class="btn btn-default btn-xs action-btn fw-light" style="line-height: 1;">
+        <i class="text-white bi bi-pause-fill"></i><span class="fs-6 text-white">PAUSAR</span>
+      </button>
+    </div>
   </div>
   <div class="svg-wrapper">
     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
@@ -404,7 +427,7 @@
       <div class="col-md-6 border-right">
         <div class="bg-white p-3">
           <h3 class="fw-bold text-center">
-            DELEGÁ EN ESPECIALISTAS<br><span class="fw-bolder">Enfocarte</span> en <span class="fw-bolder text-blue text-uppercase">tu negocio</span>
+            DELEGÁ EN ESPECIALISTAS<br><span class="fw-bolder">Enfocarte</span> en <span class="fw-bolder text-blue">tu negocio</span>
           </h3>
         </div>
       </div>
@@ -431,9 +454,6 @@
              doloremque autem quibusdam blanditiis harum alias hic accusantium 
              maxime atque ratione magni repellat?
           </p>
-          <button type="button" class="rounded-pill btn-rounded border-primary">Learn more
-            <span><i class="fas fa-arrow-right"></i></span>
-          </button>
         </div>
       </div>
       <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 services mt-4 text-end">
@@ -457,9 +477,6 @@
              doloremque autem quibusdam blanditiis harum alias hic accusantium 
              maxime atque ratione magni repellat?
           </p>
-          <button type="button" class="rounded-pill btn-rounded border-primary">Learn more
-            <span><i class="fas fa-arrow-right"></i></span>
-          </button>
         </div>
       </div>
     </div>
@@ -473,9 +490,6 @@
              doloremque autem quibusdam blanditiis harum alias hic accusantium 
              maxime atque ratione magni repellat?
           </p>
-          <button type="button" class="rounded-pill btn-rounded border-primary">Learn more
-            <span><i class="fas fa-arrow-right"></i></span>
-          </button>
         </div>
       </div>
       <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 services mt-4 text-end">
@@ -493,7 +507,7 @@
       <h1 class="display-3 fw-bold text-capitalize">Equipos</h1>
       <div class="heading-line"></div>
       <p class="lead mb-2">
-        Estos son algunos de los equipos de nuestro <span class="fw-bold">Entorno de Trabajo</span>
+        Algunos de los equipos de <span class="fw-bold">nuestro entorno de trabajo</span>
       </p>
       <h4 class="fs-4 lead mt-3 mb-5">
         Instalación <span class="screen-reader-text">de Redes</span><i class="bi bi-dot"></i>
@@ -679,7 +693,7 @@
       <div class="my-4"><i class="fs-3 text-blue far fa-handshake"></i></div>
       <h1 class="display-3 fw-bold text-uppercase">Clientes</h1>
       <div class="heading-line"></div>
-      <p class="lead">Empresas que confían en FixedUP</p>
+      <p class="lead"><span class="fw-bold">Empresas que confían</span> en FixedUP</p>
     </div>
     <div class="row clientes-wrapper">
       <div class="col-6 col-lg-4">
@@ -724,7 +738,7 @@
       <div class="my-4"><i class="fs-3 text-blue bi bi-patch-question-fill"></i></div>
       <h1 class="display-3 fw-bold text-uppercase">faq</h1>
       <div class="heading-line"></div>
-      <p class="lead">frequently asked questions, get knowledge befere hand</p>
+      <p class="lead"><span class="fw-bold">Preguntas frecuentes.</span> Respuestas de antemano</p>
     </div>
     <div class="row mt-5">
       <div class="col-md-12">
@@ -821,7 +835,6 @@
       </p>
     </div>
 
-    <!-- START THE CTA CONTENT  -->
     <div class="row text-white">
       <div class="col-12 col-lg-6 gradient contact-left shadow p-3">
         <div class="cta-info w-100">
@@ -839,23 +852,30 @@
       </div>
       <div class="col-12 col-lg-6 bg-white shadow p-3">
         <div class="form w-100 pb-2">
-          <h4 class="display-3--title text-blue mb-5">start your project</h4>
-          <form action="#" class="row">
-            <div class="col-lg-6 col-md mb-3">
-              <input type="text" placeholder="First Name" id="inputFirstName" class="shadow form-control form-control-lg">
+          <h4 class="display-3--title text-blue mb-5">Contactanos!</h4>
+          <form class="row needs-validation" novalidate>
+            <div class="col-md-4">
+              <label for="validationCustom01" class="form-label">First name</label>
+              <input type="text" class="shadow form-control form-control-lg" id="validationCustom01" value="Mark" required>
+              <div class="valid-feedback">
+                Looks good!
+              </div>
             </div>
             <div class="col-lg-6 col-md mb-3">
-              <input type="text" placeholder="Last Name" id="inputLastName" class="shadow form-control form-control-lg">
+              <input type="text" placeholder="Nombre" id="inputFirstName" class="shadow form-control form-control-lg">
+            </div>
+            <div class="col-lg-6 col-md mb-3">
+              <input type="text" placeholder="Apellido" id="inputLastName" class="shadow form-control form-control-lg">
             </div>
             <div class="col-lg-12 mb-3">
-              <input type="email" placeholder="email address" id="inputEmail" class="shadow form-control form-control-lg">
+              <input type="email" placeholder="Email" id="inputEmail" class="shadow form-control form-control-lg">
             </div>
             <div class="col-lg-12 mb-3">
-              <textarea name="message" placeholder="message" id="message" rows="8" class="shadow form-control form-control-lg"></textarea>
+              <textarea name="message" placeholder="Mensaje" id="message" rows="8" class="shadow form-control form-control-lg"></textarea>
             </div>
             <div class="text-center d-grid mt-1">
               <button type="button" class="btn btn-primary rounded-pill pt-3 pb-3">
-                submit
+                Enviar
                 <i class="fas fa-paper-plane"></i>
               </button>
             </div>
@@ -937,28 +957,25 @@
 </a>
 
 
-
-   
-    <script src="assets/vendors/glightbox/js/glightbox.min.js"></script>
-
-    <script type="text/javascript">
-      const lightbox = GLightbox({
-        'touchNavigation': true,
-        'href': 'https://www.youtube.com/watch?v=J9lS14nM1xg',
-        'type': 'video',
-        'source': 'youtube', //vimeo, youtube or local
-        'width': 900,
-        'autoPlayVideos': 'true',
-      });
-    </script>
-    <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js' integrity='sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==' crossorigin='anonymous' referrerpolicy='no-referrer'></script>
-    <script src="assets/js/bootstrap.bundle.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"
-      integrity="sha512-Eak/29OTpb36LLo2r47IpVzPBLXnAMPAVypbSZiZ4Qkf8p/7S/XRG5xp7OKWPPYfJT6metI+IORkR5G8F900+g=="
-      crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-      <script src="assets/js/init-fixed-up.js"></script>
-      <script>
-        new WOW().init();
-      </script>
+  <script src="assets/vendors/glightbox/js/glightbox.min.js"></script>
+  <script type="text/javascript">
+    const lightbox = GLightbox({
+      'touchNavigation': true,
+      'href': 'https://www.youtube.com/watch?v=J9lS14nM1xg',
+      'type': 'video',
+      'source': 'youtube', //vimeo, youtube or local
+      'width': 900,
+      'autoPlayVideos': 'true',
+    });
+  </script>
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js' integrity='sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==' crossorigin='anonymous' referrerpolicy='no-referrer'></script>
+  <script src="assets/js/bootstrap.bundle.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"
+    integrity="sha512-Eak/29OTpb36LLo2r47IpVzPBLXnAMPAVypbSZiZ4Qkf8p/7S/XRG5xp7OKWPPYfJT6metI+IORkR5G8F900+g=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <script src="assets/js/init-fixed-up.js"></script>
+  <script>
+    new WOW().init();
+  </script>
 </body>
 </html>

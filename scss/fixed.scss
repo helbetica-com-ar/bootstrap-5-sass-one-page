@@ -1,3 +1,5 @@
+@use 'custom-fix' as *;
+
 // FIXED COLORS
 // https://coolors.co/252b2d-31393c-005ef5-2176ff-5db5fd-86c8fe-fdca40-fdca40-f79824-f79824
 
@@ -8,26 +10,14 @@
 @import '../../node_modules/bootstrap-icons/font/bootstrap-icons.css'; 
 // @import '../../node_modules/@fortawesome/fontawesome-free/css/fontawesome.min.css'; 
 
-$fu_main: #ff0000;
-$fu_main_hover: #ffdd00;
-$fu_secondary: #000000;
-$fu_secondary_hover: #dadada;
-
-$fu_grey: #252B2D;
-$fu_grey_light: #31393C;
-$fu_light_grey: #cccccc;
-$fu_light_grey_light: #e9ecef;
-$fu_blue: rgba(0, 94, 245, 1);
-$fu_blue_light: rgba(33, 118, 255, 1);
-$fu_blueish: rgba(0, 94, 245, 0.6);
-$fu_blueish_light: rgba(33, 118, 255, 0.6);
-
-$fluid_limit: 13.5rem; 
 
 body {
     font-family: "Poppins", "Ubuntu", sans-serif;
 }
 
+// body * {
+//   outline: 1px solid red!important;
+// }
 
 
 .logo-navbar {
@@ -45,14 +35,6 @@ body {
 
 .collapse.show {
   border-top: 2px dashed rgba(204, 204, 204,0.4);
-}
-
-
-.carousel-caption h1 {
-    text-shadow: 2px 2px 2px $fu_blue;
-}
-.carousel-caption p {
-  text-shadow: 1px 1px 1px $fu_blue;
 }
 
 .screen-reader-text {
@@ -114,25 +96,6 @@ body {
     color: #fff;
 }
 
-
-/* Since positioning the image, we need to help out the caption */
-.carousel-caption {
-  bottom: 3rem;
-  z-index: 10;
-}
-
-/* Declare heights because of positioning of img element */
-.carousel-item {
-  height: 32rem;
-}
-.carousel-item > img {
-  position: absolute;
-  top: 0;
-  left: 0;
-  min-width: 100%;
-  height: 32rem;
-}
-
 .bd-placeholder-img {
   font-size: 1.125rem;
   text-anchor: middle;
@@ -147,22 +110,7 @@ body {
   }
 }
 
-.carousel-indicators [data-bs-target] {
-    width: 60px;
-    height: 4px;
-}
 
-#carousel-clientes .carousel-item {
-    height: auto!important;
-}
-
-#carousel-clientes {
-    padding-bottom: 5rem;
-}
-
-#carousel-clientes .carousel-indicators [data-bs-target]{
-    background-color: $fu_blue;
-}
 
 .svg-wrapper.svg-inverter {
   background-color: $fu_blue;
@@ -175,9 +123,7 @@ body {
   background: linear-gradient(to bottom, $fu_blue_light, $fu_blue);
 }
 
-#carousel .carousel-inner {
-  background: linear-gradient(to bottom, $fu_blue, $fu_blue_light);
-}
+
 .network-icons {
   width: 80px;
   max-height: 100px;
@@ -279,29 +225,7 @@ content: "";
   background-size: cover;
 }
 
-#carouselButtons {
-  position: relative;
-  top: 0;
-  right: 1rem;
-}
 
-.carousel-control-prev-icon {
-  background-image: none;
-}
-.carousel-control-next-icon {
-  background-image: none;
-}
-
-.carousel-control-prev-icon, .carousel-control-next-icon {
-    width: auto;
-    height: auto;
-}
-
-.carousel-control-prev-icon i,
-.carousel-control-next-icon i{
-  font-size: 10rem;
-  text-shadow: 1px 1px 1px $fu_blue;
-}
 
 
 .action-btn-wrapper {
@@ -420,11 +344,11 @@ content: "";
 }
 
 .toggle-spans {
-  height: 4rem;
+  height: 7.5rem;
   margin-bottom: 15px;
 }
 
-.toggle-spans .col {
+.toggle-spans > div {
   position: relative;
 }
 
@@ -442,25 +366,24 @@ content: "";
 	animation:goInGoOut 12s infinite;
 }
 
-.toggle-spans .text-end span { 
+.toggle-spans .text-center span,
+.toggle-spans .text-center span { 
   position: absolute;
-  right: 25px;
+  width: 100%;
+  left: 0;
 }
-.toggle-spans .text-end::after{
+.toggle-spans .text-md-end::after{
     content: "&";
     display: block;
     position: absolute;
-    right: -8px;
-    font-size: 70%;
+    right: 50%;
+    margin-right: -10px;
+    margin-top: 30px;
     font-weight: lighter;
     line-height: 52px;
     color: $fu_blue;
 }
 
-.toggle-spans .text-start span { 
-  position: absolute;
-  left: 25px;
-}
 
 .toggle-spans .span-01 { 
   -webkit-animation-delay: 0s;

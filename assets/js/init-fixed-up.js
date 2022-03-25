@@ -16,6 +16,11 @@ $(document).ready(function () {
     //});
 
 
+    var navMain = $(".navbar-collapse"); 
+    navMain.on("click", "a:not([data-toggle])", null, function () {
+        navMain.collapse('hide');
+    });
+
     // Assign customScrollTo function to main navigation spied nav items 
     $('.smoothscroll').on('click', function (event) {
         event.preventDefault();

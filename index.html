@@ -403,12 +403,12 @@
       <h1 class="display-3 fw-bold">Servicios</h1>
       <div class="heading-line mb-1"></div>
       <div class="row gx-0 toggle-spans fs-3 fw-bold">
-        <div class="col text-end">
+        <div class="col-12 col-md-6 text-center text-md-end">
           <span class="span-01 toggle-animation">HARDWARE</span>
           <span class="span-03 toggle-animation toggle-delay">CABLEADO</span>
           <span class="span-05 toggle-animation toggle-delay">UNA MAS</span>
         </div>
-        <div class="col text-start">
+        <div class="col-12 col-md-6 text-center text-md-start">
           <span class="span-02 toggle-animation">SOFTWARE</span>
           <span class="span-04 toggle-animation toggle-delay">INALAMBRICO</span>
           <span class="span-06 toggle-animation toggle-delay">OTRA</span>
@@ -835,14 +835,14 @@
       </p>
     </div>
 
-    <div class="row text-white">
-      <div class="col-12 col-lg-6 gradient contact-left shadow p-3">
+    <div class="row">
+      <div class="col-12 col-lg-6 gradient text-white contact-left shadow p-3">
         <div class="cta-info w-100">
           <h4 class="display-4 fw-bold">100% Clientes Satisfechos</h4>
           <p class="lh-lg">
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam alias optio minima, tempore architecto sint ipsam dolore tempora facere laboriosam corrupti!
           </p>
-          <h3 class="display-3--brief">What will be the next step?</h3>
+          <h3 class="display-3--brief">¿Cuales son los siguientes?</h3>
           <ul class="cta-info__list">
             <li>We'll prepare the proposal.</li>
             <li>we'll discuss it together.</li>
@@ -853,31 +853,28 @@
       <div class="col-12 col-lg-6 bg-white shadow p-3">
         <div class="form w-100 pb-2">
           <h4 class="display-3--title text-blue mb-5">Contactanos!</h4>
-          <form class="row needs-validation" novalidate>
-            <div class="col-md-4">
-              <label for="validationCustom01" class="form-label">First name</label>
-              <input type="text" class="shadow form-control form-control-lg" id="validationCustom01" value="Mark" required>
-              <div class="valid-feedback">
-                Looks good!
+          <form class="form-floating needs-validation" novalidate>
+            <div class="row g-0 mb-3">
+              <div class="col form-floating">
+                <input type="text" class="form-control" id="nombre" placeholder="Nombre" value="">
+                <label for="nombre">Nombre</label>
+              </div>
+              <div class="col form-floating">
+                <input type="text" class="form-control" id="empresa" placeholder="Empresa" value="">
+                <label for="empresa">Empresa</label>
               </div>
             </div>
-            <div class="col-lg-6 col-md mb-3">
-              <input type="text" placeholder="Nombre" id="inputFirstName" class="shadow form-control form-control-lg">
+            <div class="row g-0 mb-3">
+              <div class="col form-floating">
+                <input type="email" class="form-control" id="email" placeholder="Email" value="">
+                <label for="email">Email</label>
+              </div>
             </div>
-            <div class="col-lg-6 col-md mb-3">
-              <input type="text" placeholder="Apellido" id="inputLastName" class="shadow form-control form-control-lg">
-            </div>
-            <div class="col-lg-12 mb-3">
-              <input type="email" placeholder="Email" id="inputEmail" class="shadow form-control form-control-lg">
-            </div>
-            <div class="col-lg-12 mb-3">
-              <textarea name="message" placeholder="Mensaje" id="message" rows="8" class="shadow form-control form-control-lg"></textarea>
-            </div>
-            <div class="text-center d-grid mt-1">
-              <button type="button" class="btn btn-primary rounded-pill pt-3 pb-3">
-                Enviar
-                <i class="fas fa-paper-plane"></i>
-              </button>
+            <div class="row g-0 mb-3">
+              <div class="col form-floating">
+                <input type="text" class="form-control" id="phone" placeholder="Teléfono" value="">
+                <label for="phone">Teléfono</label>
+              </div>
             </div>
           </form>
         </div>

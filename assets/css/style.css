@@ -10865,6 +10865,63 @@ textarea.form-control-lg {
   background: linear-gradient(to right, rgba(153, 38, 240, 0.95), rgba(209, 34, 227, 0.95));
 }
 
+.carousel-caption h1 {
+  text-shadow: 2px 2px 2px #005ef5;
+}
+
+.carousel-caption p {
+  text-shadow: 1px 1px 1px #005ef5;
+}
+
+.carousel-caption {
+  bottom: 3rem;
+  z-index: 10;
+}
+
+.carousel-item {
+  height: 32rem;
+}
+
+.carousel-item > img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  min-width: 100%;
+  height: 32rem;
+}
+
+.carousel-indicators [data-bs-target] {
+  width: 60px;
+  height: 4px;
+}
+
+#carousel-clientes .carousel-item {
+  height: auto !important;
+}
+
+#carousel-clientes {
+  padding-bottom: 5rem;
+}
+
+#carousel-clientes .carousel-indicators [data-bs-target] {
+  background-color: #005ef5;
+}
+
+#carousel .carousel-inner {
+  background: linear-gradient(to bottom, #005ef5, #2176ff);
+}
+
+#carouselButtons {
+  position: relative;
+  top: 0;
+  right: 1rem;
+}
+
+.carousel-control-prev-icon i,
+.carousel-control-next-icon i {
+  display: none;
+}
+
 .menu {
   background: linear-gradient(to right, rgba(153, 38, 240, 0.95), rgba(209, 34, 227, 0.95));
 }

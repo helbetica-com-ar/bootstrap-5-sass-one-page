@@ -66,6 +66,58 @@
     background-position: center left;
     background-size: contain;
   }
+
+  .toggle-spans {
+    height: 3.5rem;
+  }
+
+  .toggle-spans .text-md-end span {
+    position: absolute;
+    right: 25px;
+    width: inherit;
+    left: auto;
+  }
+
+  .toggle-spans .text-md-end::after {
+    content: "&";
+    display: block;
+    position: absolute;
+    right: -8px;
+    margin-right: auto;
+    margin-top: auto;
+    font-size: 70%;
+    font-weight: lighter;
+    line-height: 52px;
+    color: #005ef5;
+  }
+
+  .toggle-spans .text-md-start span {
+    position: absolute;
+    left: 25px;
+    width: inherit;
+  }
+}
+@media (min-width: 992px) {
+  .carousel-control-prev-icon,
+.carousel-control-next-icon {
+    background-image: none;
+  }
+
+  .carousel-control-prev-icon i,
+.carousel-control-next-icon i {
+    display: inline;
+  }
+
+  .carousel-control-prev-icon, .carousel-control-next-icon {
+    width: auto;
+    height: auto;
+  }
+
+  .carousel-control-prev-icon i,
+.carousel-control-next-icon i {
+    font-size: 10rem;
+    text-shadow: 1px 1px 1px #005ef5;
+  }
 }
 @media (min-width: 1400px) {
   .container-fluid {

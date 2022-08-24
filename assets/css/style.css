@@ -10971,10 +10971,10 @@ textarea.form-control-lg {
   animation-delay: 1.5s;
 }
 
-.campanies {
+.companies {
   padding: 0 0 5rem 0;
 }
-.campanies__logo-box {
+.companies__logo-box {
   max-width: 100%;
   height: 3rem;
   margin-bottom: 2rem;
@@ -10982,10 +10982,10 @@ textarea.form-control-lg {
   text-align: center;
   position: relative;
 }
-.campanies__logo-box img {
+.companies__logo-box img {
   height: 100%;
 }
-.campanies__logo-box img:hover {
+.companies__logo-box img:hover {
   filter: grayscale(120);
 }
 
@@ -11220,20 +11220,20 @@ textarea.form-control-lg {
   color: #9926f0;
 }
 
-.campany-list {
+.company-list {
   display: block;
   list-style-type: none;
   position: relative;
 }
-.campany-list li {
+.company-list li {
   margin-bottom: 0.5rem;
   text-decoration: none;
 }
-.campany-list li a {
+.company-list li a {
   color: #fff;
   text-decoration: none;
 }
-.campany-list li a:hover {
+.company-list li a:hover {
   color: #9926f0;
 }
 

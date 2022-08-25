@@ -112,6 +112,11 @@ body {
   max-height: 100px;
 }
 
+.whatsapp {
+  width: 100%;
+  left: 0;
+}
+
 .gradient {
   background: linear-gradient(to bottom, #005ef5, #2176ff);
 }

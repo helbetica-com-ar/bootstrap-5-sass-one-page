@@ -15,6 +15,9 @@
 
 .carousel-item {
   height: 32rem;
+  &.contain {
+    background-size: contain;
+  }
 }
 
 .carousel-item > img {

@@ -10882,6 +10882,9 @@ textarea.form-control-lg {
 .carousel-item {
   height: 32rem;
 }
+.carousel-item.contain {
+  background-size: contain;
+}
 
 .carousel-item > img {
   position: absolute;
